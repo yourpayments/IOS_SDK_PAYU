@@ -72,7 +72,7 @@
     postString = [postString stringByAppendingString:[NSString stringWithFormat:@"&HASH=%@",hmac]];
     NSData *postData = [postString dataUsingEncoding:NSUTF8StringEncoding];
     
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://secure.payu.ru/order/ios.php"] cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:30.0f];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://secure.ypmn.ru/order/ios.php"] cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:30.0f];
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:postData];
     
